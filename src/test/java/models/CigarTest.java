@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 public class CigarTest {
 
+
+
     @Test
     public void setNameTest() {
         String expected = "Uncle Bob";
@@ -67,6 +69,38 @@ public class CigarTest {
         Assertions.assertEquals(expected, testCigar.getPrice());
     }
 
+   @Test
 
+    public void constructorTest(){
+       int expectedId = 123;
+       String expectedName = "Bob's";
+       String expectedBrand = "Tito";
+       String expectedShape = "Corona";
+       float expectedSize = 6.5f;
+       int expectedQuantity = 10;
+       float expectedPrice = 9.99f;
+
+
+        Cigar testCigar = new Cigar(expectedId,expectedName, expectedBrand, expectedShape,
+                expectedSize, expectedQuantity, expectedPrice);
+
+         testCigar.setId(expectedId);
+         testCigar.setName(expectedName);
+         testCigar.setBrand(expectedBrand);
+         testCigar.setShape(expectedShape);
+         testCigar.setSize(expectedSize);
+         testCigar.setQuantity(expectedQuantity);
+         testCigar.setPrice(expectedPrice);
+
+
+        Assertions.assertEquals(expectedId, testCigar.getId());
+        Assertions.assertEquals(expectedName, testCigar.getName());
+        Assertions.assertEquals(expectedBrand, testCigar.getBrand());
+        Assertions.assertEquals(expectedShape, testCigar.getShape());
+        Assertions.assertEquals(expectedSize, testCigar.getSize());
+        Assertions.assertEquals(expectedQuantity, testCigar.getQuantity());
+        Assertions.assertEquals(expectedPrice, testCigar.getPrice());
+
+}
 
 }

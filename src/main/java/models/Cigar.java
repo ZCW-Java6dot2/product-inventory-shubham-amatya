@@ -10,6 +10,12 @@ public class Cigar {
     private int quantity;
     private float price;
 
+    public Cigar(int id, String name, String brand, String shape,
+                 float size, int quantity, float price) {
+    }
+
+    public Cigar(){}
+
 
     public void setName(String name){
         this.name = name;
@@ -66,4 +72,13 @@ public class Cigar {
     public float getPrice(){
         return price;
     }
+
+
+
+
+
+
+
+
+
 }
