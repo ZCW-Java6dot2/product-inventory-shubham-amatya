@@ -15,7 +15,7 @@ public class CigarTest {
 
 
     @Test
-    public void setId() {
+    public void testId() {
         int expected = 12345;
         Cigar testCigar = new Cigar();
         testCigar.setId(expected);
