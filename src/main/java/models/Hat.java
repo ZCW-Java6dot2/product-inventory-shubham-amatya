@@ -10,6 +10,15 @@ public class Hat {
     private int quantity;
     private float price;
 
+
+    public Hat(int id, String name, String brand, String color,
+                        float size, int quantity, float price) {
+    }
+
+    public Hat(){
+
+    }
+
     public void setId(int id){
         this.id = id;
     }

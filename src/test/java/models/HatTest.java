@@ -71,5 +71,40 @@ public class HatTest {
         Assertions.assertEquals(expected, h1.getPrice());
     }
 
+    @Test
+
+    public void testConstructor(){
+        int expectedId = 123;
+        String expectedName = "Chelsea";
+        String expectedBrand = "ChelseaFC";
+        String expectedColor = "Blue";
+        float expectedSize = 6.5f;
+        int expectedQuantity = 10;
+        float expectedPrice = 9.99f;
+
+        Hat testHat = new Hat(expectedId,expectedName, expectedBrand, expectedColor,
+                expectedSize, expectedQuantity, expectedPrice);
+
+       testHat.setId(expectedId);
+        testHat.setName(expectedName);
+        testHat.setBrand(expectedBrand);
+        testHat.setColor(expectedColor);
+        testHat.setSize(expectedSize);
+        testHat.setQuantity(expectedQuantity);
+        testHat.setPrice(expectedPrice);
+
+
+        Assertions.assertEquals(expectedId, testHat.getId());
+        Assertions.assertEquals(expectedName, testHat.getName());
+        Assertions.assertEquals(expectedBrand, testHat.getBrand());
+        Assertions.assertEquals(expectedColor, testHat.getColor());
+        Assertions.assertEquals(expectedSize, testHat.getSize());
+        Assertions.assertEquals(expectedQuantity, testHat.getQuantity());
+        Assertions.assertEquals(expectedPrice, testHat.getPrice());
+
+
+
+    }
+
 
 }
