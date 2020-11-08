@@ -16,6 +16,9 @@ public class Cigar {
 
     public Cigar(){}
 
+    public Cigar(int id, String name, String brand, int qty) {
+    }
+
 
     public void setName(String name){
         this.name = name;
